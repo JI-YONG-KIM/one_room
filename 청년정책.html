@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주거 상식</title>
+    <style>
+        :root {
+            --primary-color: #4aa559;
+            --secondary-color: #168832;
+            --accent-color: #4ff765;
+            --background-color: #f5f7fa;
+            --text-color: #333;
+            --light-gray: #e0e0e0;
+            --dark-gray: #757575;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.8rem;
+        }
+
+        .step-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .tip-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .nav-tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .nav-tabs li {
+            margin-right: 1rem;
+        }
+
+        .nav-tabs a {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav-tabs a.active {
+            border-color: var(--light-gray);
+            border-bottom-color: white;
+            background-color: white;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--light-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>청년정책</h1>
+            <p>더 똑똑하게 자취하는 법</p>
+        </div>
+    </header>
+    
+    <div class="container">
+
+<ul class="nav-tabs">
+    <li><a href="#step1">STEP 1.일자리 및 경제지원</a></li>
+    <li><a href="#step2">STEP 2. 청년 주거 & 생활 안정</a></li>
+    <li><a href="#step3">STEP 3. 교육·문화 지원</a></li>
+    <li><a href="#step4">STEP 4. 청년 참여 및 권리</a></li>
+</ul>
+            <h2>🤔 청년 정책, 어디서 확인할 수 있을까?</h2>
+            <p>전국,경기도,수원시에서 각각 다른 정책을 지원받을 수 있으며 
+                크게 일자리 및 창업,주거,교육 및 역량 개발,복지 및 생활 안정,금융·자산형성,참여 및 권리 보장으로 나눌 수 있습니다.</p>
+<section id="step1">
+    <h2>🔎 STEP 1.일자리 및 경제지원</h2>   
+    <div class="step-card">
+        <h3>💸 청년도약계좌 (전국)</h3>
+        <ul>  
+            <li>청년의 자산 형성을 위한 만기 5년의 적금 상품.</li>
+            <li>정부와 은행이 매칭 지원해 월 최대 70만 원까지 수령 가능.</li>
+            <li>소득 조건 충족 시 이자 비과세 혜택.</li>
+            <li>가입 조건: 만 19~34세, 개인소득 6,000만 원 이하 등.</li>
+        </ul>
+        
+        <h3>🏢 청년내일채움공제 (전국)</h3>
+        <ul>
+            <li>중소기업에 정규직으로 취업한 청년이 일정 기간 근무하면 최대 1,200만 원 이상의 목돈을 받을 수 있는 제도.</li>
+            <li>청년+정부+기업이 같이 납입해서 2년 후 청년에게 지원.</li>
+            <li>청년내일채움공제와 타부처 자산형성 사업 동시가입이 허용.</li>
+        </ul>
+        <h3>🧰 경기청년 노동자 지원사업 (경기도)</h3>
+        <ul>
+            <li>도내 중소기업 재직 청년에게 2년 간 연 240만 원 복지포인트를 제공.</li>
+            <li>가입조건: 만 19세 이상 ~ 만 39세 이하 경기도 거주자,경기도 내 중소기업 재직 4대보험 가입자</li>
+        </ul>
+
+        <h3>📈 잡아바(Jobaba) (경기도)</h3>
+        <ul>
+            <li>경기도 일자리재단 운영의 종합 취업 포털.</li>
+            <li>자기소개서 첨삭, AI면접 체험, 멘토링 등 다수 무료 지원.</li>
+            <li>링크: www.jobaba.net</li>
+        </ul>
+        <h3>청년기본소득</h3>
+        <ul>
+            <li>기초 생활 수급자인 청년의 사회적 기본권 보장을 지원하는 경기도형 기본소득제도.</li>
+            <li>1인당 분기별 25만원(최대100만원)을 지역화폐로 기본소득 지원.</li>
+            <li>신청 대상:신청일 기준 경기도에 주민등록을 두고 있는 24세 청년 중 3년 이상 계속 또는 합산 10년 이상 거주한 경우</li>
+            <li>지급된 지역화폐 유효기간은 3년이며 기한내 미사용시 소멸.</li>
+        </ul>
+        <h3>경기도 청년면접수당</h3>
+        <ul>
+            <li>청년의 면접비용 부담을 완화하고, 적극적인 구직활동을 촉진하여 청년 고용 촉진하는 제도.</li>
+            <li>1인 최대 50만원 지역화폐 지원.</li>
+            <li>신청 대상:구직활동을 하는 경기도 거주 18세 이상 39세 이하 청년.</li>
+            <li>온라인 신청 : 잡아바 어플라이(https://apply.jobaba.net/) 홈페이지.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="step2">
+    <h2>🏠 STEP 2. 청년 주거 & 생활 안정 🏡</h2>   
+    <div class="step-card">
+        <h3>🏘️ 청년 월세 한시 특별지원 (전국)</h3>
+        <ul>    
+            <li>생애 1회에 한하여 최대 12개월 간 월 20만 원 월세 지원.</li>
+            <li>기초지자체와 연계하여 별도 중복 지원도 가능.</li>
+            <li>지원대상: 만 19~34세, 중위소득 60% 이하</li>
+            <li>온라인 신청 : 복지로(https://www.bokjiro.go.kr) 홈페이지</li>
+        </ul>
+        
+        <h3>🧊 수원시 청년 월세지원 (수원시)</h3>
+        <ul>
+            <li>월 임차료 10만원 지원(최대 5개월/50만원), 생애 1회</li>
+            <li>지원대상: 수원시 거주 19~34세 1인 가구 미혼 청년</li>
+            <li>온라인 신청 : 수원시청(https://www.suwon.go.kr/index.do) 홈페이지</li>
+        </ul>
+
+        <h3>📏 청년전용 버팀목 전세자금 대출(전국)</h3>
+        <ul>
+            <li>전세자금이 부족한 청년들에게 낮은 금리로 전세자금을 대출해 주는 제도.</li>
+            <li>대출한도:최대 2억원 이내(임차 보증금의 80%).</li>
+            <li>대출금리:연 2.2%~3.3%</li>
+            <li>대출기간:최초 2년(4회연장, 최장 10년 이용가능)</li>
+        </ul>
+
+        <h3>🏠공공 기숙사</h3>
+        <ul>
+            <li>청년들의 경제적 부담 경감과 주거안정을 위해 지자체에서 건립한 기숙사</li>
+            <li>행복 기숙사,경기도 기숙사,기숙사형 청년주택등 여러 기숙사들이 존재.</li>
+            <li>기숙사들의 각 홈페이지에서 신청가능.</li>
+        </ul>
+    </div>
+</section>
+<section id="step3">
+    <h2>🔎 STEP 3. 교육·문화 지원 📚</h2>   
+    <div class="step-card">
+        <h3>🧩청년 문화패스 (경기도)</h3>
+        <ul>    
+            <li>경기지역 만 18세 청년에게 문화생활비(15만 원 상당) 지급.</li>
+            <li>공연·영화·도서 구입 등 문화활동에 사용 가능.</li>
+        </ul>
+        
+        <h3>🧠국민 내일 배움카드</h3>
+        <ul>
+            <li>국민 스스로 자기개발을 할 수 있도록 국가에서 직업능력개발 훈련비를 지원해주는 제도.</li>
+            <li>5년 동안 개인당 300~500만원의 훈련비용 지원.</li>
+            <li>누.구.나. 국민내일배움카드 신청 가능
+(단, 공무원, 사학연금 대상자, 재학생, 일정 임금 이상 대규모기업 종사자, 일부 고소득 자영자 및 특수고용형태종사자, 만 75세 이상자 제외).</li>
+        </ul>
+
+        <h3>🏫 청년바람지대 프로그램 (수원시)</h3>
+        <ul>
+            <li> 수원시 청년공간에서 운영하는 강연, 워크숍, 커뮤니티 활동.</li>
+            <li> 참가비 대부분 무료, 선착순 신청.</li>
+            <li>온라인 신청 : 수원청년포털(https://www.swyouth.kr/) 홈페이지</li>
+        </ul>
+
+        <h3>🎨 청년예술인 자립준비금 지원</h3>
+        <ul>
+            <li>협력 작업을 통한 새로운 예술 창작활동 지원 및 자립준비금 제공.</li>
+            <li>대상: 경기도 내 거주하는 만 19세~34세 청년 예술인.</li>
+            <li>지원규모:1인당 300만원</li>
+            <li>온라인 신청 : 경기예술지원센터(https://artist.ggcf.kr/) 홈페이지</li>
+        </ul>
+    </div>
+</section>
+
+<section id="step4">
+    <h2>🔎 STEP 4. 청년 참여 및 권리🗣️</h2>   
+    <div class="step-card">
+        <h3>🏛️ 수원시 청년정책위원회 (수원시)</h3>
+        <ul>  
+            <li>수원시 청년들이 직접 정책 수립에 참여할 수 있는 공식 위원회.</li>
+            <li>정기 공모를 통해 청년 위원 선발.</li>
+            <li>청년의 의견을 반영하는 창구 역할.</li>
+        </ul>
+        
+        <h3>🪧 청년참여예산 (경기도/전국)</h3>
+        <ul>
+            <li>청년이 직접 예산 편성에 제안하고 결정에 참여.</li>
+            <li>각 지자체 별도 운영, 아이디어가 정책으로 발전 가능.</li>
+            <li>청년내일채움공제와 타부처 자산형성 사업 동시가입이 허용.</li>
+        </ul>
+        <h3>🗓️ 청년의 날</h3>
+        <ul>
+            <li>매년 9월 셋째 주 토요일은 법정 ‘청년의 날’.</li>
+            <li>각 지자체 및 정부가 청년축제, 포럼, 간담회 등을 개최하여 청년정책을 공유하고 축하.</li>
+            <li>수원시도 매년 청년 주간을 지정해 다양한 행사를 개최.</li>
+        </ul>
+</section>
+<div class="tip-box">
+            <strong>대표 청년 포털 모음</strong><br>
+            <ul>
+                <li>청년몽땅정보통(<a href="https://youth.seoul.go.kr/mainA.do">https://youth.seoul.go.kr/mainA.do)</a> </li>
+                <li>경기청년포털(<a href="https://youth.gg.go.kr/gg/index.do">https://youth.gg.go.kr/gg/index.do)</a> </li>
+                <li>수원시 청년포털(<a href="https://www.swyouth.kr/">https://www.swyouth.kr/)</a> </li>
+                <li>청년드림(<a href="https://yd-donga.com/">https://yd-donga.com/)</a> </li>
+            </ul>
+        </div>
+<footer>
+    <p>본 사이트의 내용은 참고용이며, 법적 효력을 갖지 않습니다. 정확한 정보는 관련 전문가에게 문의하시기 바랍니다.</p>
+</footer>
+</body>
+</html>

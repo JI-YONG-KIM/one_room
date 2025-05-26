@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>깐풍만두 레시피</title>
+    <style>
+        :root {
+            --primary-color: #000202;
+            --secondary-color: #000000;
+            --accent-color: #000000;
+            --background-color: #ffffff;
+            --text-color: #333;
+            --light-gray: #e0e0e0;
+            --dark-gray: #757575;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            position: relative;
+            background-image: url('https://recipe1.ezmember.co.kr/cache/recipe/2017/02/14/574379a2f67c1e420750953a13f5964c1_m.jpg');
+            background-size: cover;
+            background-position: center;
+            color: rgb(0, 0, 0);
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.8rem;
+        }
+
+        .step-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        tr:nth-child(2n) {
+            background-color: #f2f2f2;
+        }
+
+        .nav-tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .nav-tabs li {
+            margin-right: 1rem;
+        }
+
+        .nav-tabs a {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .nav-tabs a.active {
+            border-color: var(--light-gray);
+            border-bottom-color: white;
+            background-color: white;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--light-gray);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>깐풍만두 레시피</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <ul class="nav-tabs">
+            <li><a href="#step1">STEP 1.재료</a></li>
+            <li><a href="#step2">STEP 2. 조리순서</a></li>
+        </ul>
+
+        <section id="step1">
+            <h2>🏠 STEP 1. 재료 🏡</h2>   
+            <div class="step-card">
+                <table>
+                    <tr>
+                        <td>냉동만두</td>
+                        <td>6개</td>
+                        <td>굴소스</td>
+                        <td>1T</td>
+                    </tr>
+                    <tr>
+                        <td>파프리카</td>
+                        <td>1/2개</td>
+                        <td>간장</td>
+                        <td>2T</td>
+                    </tr>
+                    <tr>
+                        <td>양파</td>
+                        <td>1/4개</td>
+                        <td>올리고당</td>
+                        <td>2T</td>
+                    </tr>
+                    <tr>
+                        <td>파</td>
+                        <td>조금</td>
+                        <td>식초</td>
+                        <td>1T</td>
+                    </tr>
+                    <tr>
+                        <td>청양고추</td>
+                        <td>1개</td>
+                        <td>후추</td>
+                        <td>조금</td>
+                    </tr>
+                    <tr>
+                        <td>다진마늘</td>
+                        <td>1T</td>
+                        <td>참기름</td>
+                        <td>조금</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>깨</td>
+                        <td>조금</td>    
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="step2">
+            <h2>🔎 STEP 2.조리 순서</h2>   
+            <div class="step-card">
+                <h3>①</h3><p>파프리카,양파,청양고추,파를 손질한다.</p>
+                <h3>②</h3><p>깐풍소스에 굴소스1, 간장2, 올리고당2, 식초1T, 후추약간, 참기름, 깨를 넣고 잘 섞는다.</p>
+                <h3>③</h3><p>만두는 해동을 한 후 중약불에 기름을 넉넉하게 두르고 튀기듯이 굽는다.</p>
+                <h3>④</h3><p>두는 한쪽으로 빼두고 다진마늘과 파를 먼저 볶아서 파기름을 낸다.</p>
+                <h3>⑤</h3><p>썰어 둔 야채를 넣고 볶는다.</p>
+                <h3>⑥</h3><p>양파가 투명해질 때쯤 깐풍소스를 투하하고 물을 살짝 첨가해서 졸인다.</p>
+                <h3>⑦</h3><p>마요네즈도 뿌리고 김가루까지 올려서 완성한다.</p>
+                <h3>⑧</h3><p>깐풍만두 완성한다.</p>            
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 만개의 레시피</p>
+        <p>본 사이트의 내용은 참고용이며, 법적 효력을 갖지 않습니다. 정확한 정보는 관련 전문가에게 문의하시기 바랍니다.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주거 상식</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        :root {
+            --primary-color: #a54a4a;
+            --secondary-color: #881616;
+            --accent-color: #f74f4f;
+            --background-color: #f5f7fa;
+            --text-color: #333;
+            --light-gray: #e0e0e0;
+            --dark-gray: #757575;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 1.8rem;
+        }
+        
+        .step-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .tip-box {
+            background-color: #e3f2fd;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .warning-box {
+            background-color: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .checklist {
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .icon {
+            font-size: 1.2rem;
+            margin-right: 0.5rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        
+        th, td {
+            border: 1px solid var(--light-gray);
+            padding: 0.75rem;
+            text-align: left;
+        }
+        
+        th {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        
+        tr:nth-child(2n) {
+            background-color: #f2f2f2;
+        }
+        
+        .nav-tabs {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .nav-tabs li {
+            margin-right: 1rem;
+        }
+        
+        .nav-tabs a {
+            display: block;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid transparent;
+            border-radius: 4px 4px 0 0;
+        }
+        
+        .nav-tabs a.active {
+            border-color: var(--light-gray);
+            border-bottom-color: white;
+            background-color: white;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 1.5rem 0;
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--light-gray);
+        }
+        .swiper {
+            width: 100%;
+            max-width: 1100px;
+        }
+        .swiper-slide {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            font-size: 14px;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+        .slide-caption {
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+    });
+});
+</script>
+
+
+    <header>
+        <div class="container">
+            <h1>요리레시피</h1>
+            <p>더 똑똑하게 자취하는 법</p>
+        </div>
+    </header>
+    
+    <div class="container">
+
+<ul class="nav-tabs">
+    <li><a href="#step1">STEP 1.초스피드 레시피</a></li>
+    <li><a href="#step2">STEP 2. 다이어트 레시피</a></li>
+    <li><a href="#step3">STEP 3. 술안주 레시피</a></li>
+    <li><a href="#step4">STEP 4. 해장 레시피</a></li>
+</ul>
+
+<section id="step1">
+    <h2>🏠 STEP 1. 초스피드 🏡</h2> 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/11/12/006d3080be97cb3328a20931e7eafddc1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">계란말이 레시피</div>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2016/09/06/115b2b934fd77085518877677d1266fa1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">간장계란밥 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/08/15/49303a2e8535c8a76e51e53d95cda72f1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">김치볶음밥 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/11/09/577f07d2a67736a0df97f8f5c95d26f01_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">참치마요 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/02/23/31108af678c45d94969415fafacaba2c1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">비빔국수 레시피</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section id="step2">
+    <h2>🏠 STEP 2. 다이어트 🏡</h2> 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/07/24/ddebf135612ea68fcb52b079feb8930d1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">알배추 두부참치롤 레시피</div>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2024/05/08/93819677da57219a5ef609ef52f164851_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">토마토 달걀 볶음 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2022/07/11/0b87fd150c33a01e1ebc6a7d32565f441_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">양배추 오믈렛 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/01/06/8a350cc766ba99e365f53856293f97801_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">두부 닭가슴살 유부초밥</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/01/21/92332ad10977a71a63e4f5346c8e92bd1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">닭가슴살 냉채</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section id="step3">
+    <h2>🏠 STEP 3. 술안주 🏡</h2> 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/08/15/2e35349d4ca6d65611bab97efeec7a621_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">부추베이컨말이 레시피</div>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2017/02/14/574379a2f67c1e420750953a13f5964c1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">깐풍만두 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2016/08/22/06726be2dffba2a848cd1775a82e465b1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">오징어채 버터요리</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/11/23/b5bf1714b33d66ced31846c141dbbf301_m.JPG" alt="명란마요 초밥">
+                    <div class="slide-caption">골뱅이소면무침 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2019/03/19/9b756d61ada691f87edc94e13d8a4f731_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">콘치즈 레시피</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section id="step4">
+    <h2>🏠 STEP 4. 해장 🏡</h2> 
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2018/09/20/faa7dcefbda5a5f196ba892367635f931_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">전주식 콩나물탕 레시피</div>
+                </a>
+            </div>
+
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/12/08/5f1813a6c3ab66b14637bdc40d549a951_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">배추된장국 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2025/01/19/5cceb208e35688ddf1afd186eb6dcffd1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">어묵탕 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2023/03/08/e4e1cdea2c3c3aa68e4d57c627ec6eb31_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">황태국 레시피</div>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="https://example.com/recipe-detail-page" style="text-decoration: none; color: inherit;">
+                    <img src="https://recipe1.ezmember.co.kr/cache/recipe/2015/05/15/a8cbdef7af878117903ff65083aab0fb1_m.jpg" alt="명란마요 초밥">
+                    <div class="slide-caption">해장라면 레시피</div>
+                </a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+
+<footer>
+    <p>본 사이트의 내용은 참고용이며, 법적 효력을 갖지 않습니다. 정확한 정보는 관련 전문가에게 문의하시기 바랍니다.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요리 슬라이더</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+    body {
+        font-family: sans-serif;
+        padding: 20px;
+    }
+    .swiper {
+        width: 100%;
+        max-width: 1100px;
+    }
+    .swiper-slide {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        font-size: 14px;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: auto;
+    }
+    .slide-caption {
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+
+<h2>핵꿀팁 만개의 BEST 요리모음</h2>
+
+<!-- Swiper -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide">
+        <img src="image1.jpg" alt="명란마요 초밥">
+        <div class="slide-caption">도시락에 빠질 수 없는 ✽유부초밥✽ 레시피 모음</div>
+    </div>
+    <div class="swiper-slide">
+        <img src="image2.jpg" alt="야식 닭강정">
+        <div class="slide-caption">하루의 마무리는 역시 야식이지 💕 야식 추천메뉴 8가지</div>
+    </div>
+    <div class="swiper-slide">
+        <img src="image3.jpg" alt="감자요리">
+        <div class="slide-caption">감자 1박스 뚝딱 가능! 감자 요리 7가지</div>
+    </div>
+    <div class="swiper-slide">
+        <img src="image4.jpg" alt="전 요리">
+        <div class="slide-caption">추석을 더 특별하게! 전 요리 10가지</div>
+    </div>
+    </div>
+
+    <!-- 내비게이션 버튼 -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+    loop: true,
+    });
+</script>
+
+</body>
+</html>
